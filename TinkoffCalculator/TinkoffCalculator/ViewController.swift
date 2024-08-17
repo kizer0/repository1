@@ -9,6 +9,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBAction func prntsymb(_ sender: UIButton) {
+        guard let smbl = sender.currentTitle else{return}
+        print(smbl)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
